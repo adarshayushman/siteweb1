@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+.customization-container {
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.instruction, .option, #saveButton {
+    margin-bottom: 20px;
+}
+
+#result {
+    margin-top: 20px;
+    color: green;
+}
+
+/* Additional styles */
+
+.header, .footer {
+    border: 2px solid #000;
+    padding: 10px;
+    margin-bottom: 20px; /* Only for the header */
+}
+
+.option label {
+    font-weight: bold; /* Make labels bold */
+}
+
+input[type=text], select, input[type=date], button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Enhancing typography */
+.instruction {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.customization-container {
+    /* Other styles */
+    position: relative;
+    border-radius: 8px; /* Adjust as needed */
+    overflow: hidden; /* Ensures that pseudo-elements respect the border-radius */
+}
+
+.customization-container:before,
+.customization-container:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(135deg, #004e92 25%, #007bff 50%, #00d2ff 75%);
+    background-size: 200% 100%;
+    animation: moveGradient 2s linear infinite;
+}
+
+.customization-container:before {
+    top: 0;
+}
+
+.customization-container:after {
+    bottom: 0;
+}
+
+@keyframes moveGradient {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+}
+
+
+

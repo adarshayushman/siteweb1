@@ -1,0 +1,102 @@
+
+body {
+font-family: 'Verdana', sans-serif;
+margin-bottom: 60px; /* 避免内容被固定的页脚遮挡 */
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: white;
+padding: 10px 50px;
+color: black;
+}
+
+#logo img {
+width: 150px; /* 根据需要调整大小 */
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+padding: 10px 20px; /* 添加内边距 */
+display: inline-block; /* 使内边距有效 */
+}
+
+nav ul li a:hover {
+background-color: #e0e0e0; /* 悬停时的背景色 */
+border-radius: 5px; /* 圆角效果 */
+cursor: pointer; /* 显示手形光标表示可点击 */
+}
+
+#user-actions button {
+padding: 10px 20px;
+margin-left: 10px;
+background-color: #0066cc;
+color: white;
+border: none;
+cursor: pointer;
+font-family: 'Verdana', sans-serif;
+border-radius: 5px;
+}
+
+#user-actions button:hover {
+background-color: #0055bb;
+}
+
+.main-content {
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+padding: 20px;
+}
+
+.photo-with-caption {
+text-align: center; /* 图片和文字居中对齐 */
+width: 33%;
+}
+
+.photo-with-caption img {
+height: 200px; /* 统一图片高度 */
+width: auto; /* 宽度自动调整 */
+max-width: 100%; /* 确保图片不超过容器宽度 */
+object-fit: cover; /* 裁剪图片以填充指定的宽度和高度 */
+margin-bottom: 10px; /* 图片与文字之间的间隔 */
+}
+
+/* 更新页脚链接的悬停样式 */
+.footer-nav a:hover {
+color: #0066cc; /* 悬停时文字颜色变化 */
+text-decoration: underline; /* 添加下划线 */
+}
+
+footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #f2f2f2;
+text-align: center;
+padding: 10px 0;
+}
+
+.footer-nav a {
+text-decoration: none;
+color: #333;
+margin: 0 10px;
+font-size: 0.9em;
+}
+
+footer a {
+text-decoration: none;
+color: #333;
+margin: 0 10px;
+}

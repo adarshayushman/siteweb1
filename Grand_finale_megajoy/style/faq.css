@@ -1,0 +1,142 @@
+
+	body {
+font-family: 'Verdana', sans-serif;
+margin-bottom: 60px; /* 避免内容被固定的页脚遮挡 */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 50px;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box; /* 添加这个属性 */
+}
+
+
+#logo img {
+width: 150px; /* 根据需要调整大小 */
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+padding: 10px 20px; /* 添加内边距 */
+display: inline-block; /* 使内边距有效 */
+}
+
+nav ul li a:hover {
+background-color: #e0e0e0; /* 悬停时的背景色 */
+border-radius: 5px; /* 圆角效果 */
+cursor: pointer; /* 显示手形光标表示可点击 */
+}
+
+#user-actions button {
+padding: 10px 20px;
+margin-left: 10px;
+background-color: #0066cc;
+color: white;
+border: none;
+cursor: pointer;
+font-family: 'Verdana', sans-serif;
+border-radius: 5px;
+}
+
+#user-actions button:hover {
+background-color: #0055bb;
+}
+	body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.faq-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq-header h1 {
+    margin: 0;
+}
+
+.faq-header img {
+    height: 50px; /* Adjust based on your image size */
+}
+
+.faq-content {
+    text-align: left; /* 左对齐文本 */
+    padding: 0 20px; /* 添加一些内边距以美化布局 */
+}
+
+.faq-content p {
+    margin: 10px 0;
+}
+
+.more-questions {
+    margin-top: 20px;
+}
+
+.more-questions a {
+    color: blue;
+    text-decoration: none;
+}
+
+.more-questions a:hover {
+    text-decoration: underline;
+}
+/* 更新页脚链接的悬停样式 */
+.footer-nav a:hover {
+color: #0066cc; /* 悬停时文字颜色变化 */
+text-decoration: underline; /* 添加下划线 */
+}
+
+footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #f2f2f2;
+text-align: center;
+padding: 10px 0;
+}
+
+.footer-nav a {
+text-decoration: none;
+color: #333;
+margin: 0 10px;
+font-size: 0.9em;
+}
+
+footer a {
+text-decoration: none;
+color: #333;
+margin: 0 10px;
+}

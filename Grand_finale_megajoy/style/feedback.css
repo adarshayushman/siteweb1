@@ -1,0 +1,145 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin-bottom: 60px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 50px;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+#logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 10px 20px; 
+        display: inline-block;
+    }
+
+        nav ul li a:hover {
+            background-color: #e0e0e0; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+
+#user-actions button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Verdana', sans-serif;
+    border-radius: 5px;
+}
+
+    #user-actions button:hover {
+        background-color: #0055bb;
+    }
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.photo-with-caption {
+    text-align: center;
+    width: 33%;
+}
+
+    .photo-with-caption img {
+        height: 200px; 
+        width: auto; 
+        max-width: 100%;
+        object-fit: cover; 
+        margin-bottom: 10px;
+    }
+
+.footer-nav a:hover {
+    color: #0066cc; 
+    text-decoration: underline; 
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.feedback-container {
+    text-align: center;
+}
+
+    .feedback-container textarea {
+        width: 300px;
+        height: 150px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    .feedback-container button {
+        display: block;
+        width: 100px;
+        margin: 20px auto 0;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+
+        .feedback-container button:hover {
+            background-color: #45a049;
+        }
